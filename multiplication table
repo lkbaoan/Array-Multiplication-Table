@@ -1,0 +1,27 @@
+// Khac Bao An Le
+// Multiplication table
+// Input row and column to create a multiplication table
+// Version 1
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  int row = 0;
+  int column = 0;
+  double matrix[row][column];
+  cout << "Enter number of row: ";
+  cin >> row;
+  cout << "Enter number of column: ";
+  cin >> column;
+  for (int i = 0; i < row; i++)
+  {
+    for (int j = 0; j < column; j++)
+    {
+      matrix[i][j] = (i+1) * (j+1);
+      cout << matrix[i][j] << "\t";
+    }
+    cout << endl;
+  }
+}
